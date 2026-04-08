@@ -6,6 +6,8 @@ Module này dùng để lọc trùng lặp các đường link, phục vụ cho 
 Tham số lớp `folder_path` là đường dẫn đến folder chứa các `chunk files` và `metadata`.
 Tham số lớp `limit_lines_on_file_chunk` là giới hạn số dòng tối đa ở một chunk file, nếu vượt qua sẽ tạo chunk file mới.
 Hàm `check_duplicate_nupdate` dùng để check xem url đã crawl hay chưa, sau đó update url đó vào lịch sử.
+ + Hàm này trả về True thì url hiện đã từng crawl.
+ + Hàm này trả về False có nghĩa là url hiện là mới.
 Module này dùng chiến lược chunk files để giảm mức sử dụng ram và tăng tốc độ hơn.
 """
 
